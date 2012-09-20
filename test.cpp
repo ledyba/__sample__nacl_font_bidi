@@ -61,7 +61,7 @@ class TextRunCollection {
 #include <unicode/bytestream.h>
 int main(int argc, char** argv)
 {
-	TextRunCollection runs("あいうを");
+	TextRunCollection runs("█ おおアイ明朝\u2588\u3000全角スペース");
 	std::cout << "num_runs: " << runs.num_runs() << std::endl;
 	char buf[8192];
 	CheckedArrayByteSink sink (buf, 8192);
